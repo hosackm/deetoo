@@ -51,10 +51,10 @@ def read_data():
         (Path("helm.csv"), Helm),
         (Path("shield.csv"), Shield),
     ]
-    return {
-        path.stem: [el.json for el in parse_csv_to_class(CSV_FOLDER / path, cls)]
-        for path, cls in mappers
-    }
+    items = []
+    for path, cls in mappers:
+        items.extend(el.json for el in parse_csv_to_class(CSV_FOLDER / path, cls))
+    return items
 
 
 def write_database(filepath):
@@ -62,12 +62,12 @@ def write_database(filepath):
         filepath.unlink()
 
     db = TinyDB(filepath)
-    for table, documents in read_data().items():
-        db.table(table).insert_multiple(documents)
+    base_items = db.table("base_items")
+    base_items.insert_multiple(read_data())
 
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--filename", "-f", default="base_items.json")
+    parser.add_argument("--filename", "-f", default="db.json")
     args = parser.parse_args()
     write_database(Path(args.filename))
