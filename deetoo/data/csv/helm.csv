@@ -1,0 +1,60 @@
+base_name,required_level,required_strength,max_durability,defense_min,defense_max,max_sockets,quality,char_class
+cap,0,0,12,3,5,2,normal,all
+skull cap,0,15,18,8,11,2,normal,all
+helm,0,26,24,15,18,2,normal,all
+full helm,0,41,30,23,26,2,normal,all
+mask,0,23,20,9,27,3,normal,all
+bone helm,0,25,40,33,36,2,normal,all
+great helm,0,63,40,30,35,3,normal,all
+crown,0,55,50,25,45,3,normal,all
+war hat,22,20,12,45,53,2,exceptional,all
+sallet,25,43,18,52,62,2,exceptional,all
+casque,25,59,24,63,72,2,exceptional,all
+basinet,25,82,30,75,83,2,exceptional,all
+death mask,25,55,20,54,86,3,exceptional,all
+grim helm,25,58,40,60,125,2,exceptional,all
+winged helm,25,115,40,85,98,3,exceptional,all
+grand crown,25,103,50,78,113,3,exceptional,all
+shako,44,50,12,98,141,2,elite,all
+hydraskull,47,84,18,101,145,2,elite,all
+armet,51,109,24,105,149,2,elite,all
+giant conch,40,142,30,110,154,2,elite,all
+demonhead,55,102,20,101,154,3,elite,all
+bone visage,63,100,40,100,157,3,elite,all
+spired helm,59,192,40,114,159,3,elite,all
+corona,66,174,50,111,165,3,elite,all
+circlet,16,0,35,20,30,2,normal,all
+coronet,39,0,30,30,40,2,exceptional,all
+tiara,52,0,25,40,50,2,elite,all
+diadem,64,0,20,50,60,2,elite,all
+jawbone cap,3,25,25,10,15,3,normal,barbarian
+fanged helm,6,35,35,15,20,3,normal,barbarian
+horned helm,12,45,45,25,30,3,normal,barbarian
+horned helm,12,45,45,25,30,3,normal,barbarian
+assault helmet,15,55,50,30,35,3,normal,barbarian
+avenger guard,18,65,55,35,50,3,normal,barbarian
+jawbone visor,25,58,25,55,68,3,exceptional,barbarian
+lion helm,29,73,35,63,75,3,exceptional,barbarian
+rage mask,29,88,45,78,90,3,exceptional,barbarian
+savage helmet,32,103,50,85,98,3,exceptional,barbarian
+slayer guard,40,118,55,93,120,3,exceptional,barbarian
+carnage helm,45,106,25,102,147,3,elite,barbarian
+fury visor,49,129,35,105,150,3,elite,barbarian
+destroyer helm,54,151,45,111,156,3,elite,barbarian
+conqueror crown,60,174,50,114,159,3,elite,barbarian
+guardian crown,65,196,55,117,168,3,elite,barbarian
+wolf head,3,16,20,8,11,3,normal,druid
+hawk helm,6,20,20,4,15,3,normal,druid
+antlers,12,24,20,18,24,3,normal,druid
+falcon mask,15,28,20,12,28,3,normal,druid
+spirit mask,18,30,20,22,35,3,normal,druid
+alpha helm,26,44,20,52,62,3,exceptional,druid
+griffon headdress,30,50,20,46,68,3,exceptional,druid
+hunter's guise,29,56,20,67,81,3,exceptional,druid
+sacred feathers,32,62,20,58,87,3,exceptional,druid
+totemic mask,41,65,20,73,98,3,exceptional,druid
+blood spirit,46,86,20,101,145,3,elite,druid
+sun spirit,51,95,20,98,147,3,elite,druid
+earth spirit,57,104,20,107,152,3,elite,druid
+sky spirit,62,113,20,103,155,3,elite,druid
+dream spirit,66,118,20,109,159,3,elite,druid

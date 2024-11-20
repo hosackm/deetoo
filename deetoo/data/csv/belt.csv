@@ -1,0 +1,16 @@
+base_name,required_level,required_strength,potion_slots,quality,max_durability,defense_min,defense_max
+sash,0,0,8,normal,12,2,2
+light belt,0,0,8,normal,14,3,3
+belt,0,25,12,normal,16,5,5
+heavy belt,0,45,12,normal,18,6,6
+plated belt,0,60,16,normal,24,8,11
+demonhide sash,24,20,16,exceptional,12,29,34
+sharkskin belt,25,20,16,exceptional,14,31,36
+mesh belt,25,58,16,exceptional,16,35,40
+battle belt,25,88,16,exceptional,18,37,42
+war belt,25,110,16,exceptional,24,41,52
+spiderweb sash,46,50,16,elite,12,55,62
+vampirefang belt,51,50,16,elite,14,56,63
+mithril coil,56,106,16,elite,16,58,65
+troll belt,62,151,16,elite,18,59,66
+colossus girdle,67,185,16,elite,24,61,71

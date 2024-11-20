@@ -1,0 +1,144 @@
+base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,max_sockets,quality,max_durability,char_class
+hand axe,0,0,0,0,axe,3,6,2,normal,28,all
+axe,0,32,0,10,axe,4,11,4,normal,24,all
+double axe,0,43,0,10,axe,5,13,5,normal,24,all
+military pick,0,49,33,-10,axe,7,11,6,normal,26,all
+war axe,0,67,0,0,axe,10,18,6,normal,26,all
+hatchet,29,25,25,0,axe,10,21,2,exceptional,28,all
+cleaver,22,68,0,10,axe,10,33,4,exceptional,24,all
+twin axe,25,85,0,10,axe,13,38,5,exceptional,24,all
+crowbill,25,94,70,-10,axe,14,34,6,exceptional,26,all
+naga,25,121,0,0,axe,16,45,6,exceptional,26,all
+tomahawk,40,125,67,0,axe,33,58,2,elite,28,all
+small crescent,45,115,83,10,axe,38,60,4,elite,24,all
+ettin axe,52,145,45,10,axe,33,66,5,elite,24,all
+war spike,59,133,54,-10,axe,30,48,6,elite,26,all
+berserker axe,64,138,59,0,axe,24,71,6,elite,26,all
+dagger,0,0,0,-20,dagger,1,4,1,normal,16,all
+dirk,0,0,25,0,dagger,3,9,1,normal,20,all
+kris,0,0,45,-20,dagger,2,11,3,normal,24,all
+blade,0,35,51,-10,dagger,4,15,2,normal,24,all
+poignard,19,25,0,-20,dagger,6,18,1,exceptional,16,all
+rondel,24,25,58,0,dagger,10,26,1,exceptional,20,all
+cinquedeas,25,25,88,-20,dagger,6,18,3,exceptional,24,all
+stilet,,25,73,97,-10,dagger,19,36,2,exceptional,24,all
+bone knife,43,38,75,-20,dagger,23,49,1,elite,26,all
+mithril point,52,55,98,0,dagger,37,53,1,elite,55,all
+fanged knife,62,42,86,-20,dagger,15,57,3,elite,36,all
+legend spike,66,65,67,-10,dagger,31,47,2,elite,47,all
+javelin,0,0,0,-10,javelin,1,5,0,normal,null,all
+pilum,0,0,45,0,javelin,4,9,0,normal,null,all
+short spear,0,40,40,10,javelin,2,13,0,normal,null,all
+glaive,0,52,35,20,javelin,5,17,0,normal,null,all
+throwing spear,0,0,65,-10,javelin,5,15,0,normal,null,all
+war javelin,18,25,25,-10,javelin,6,19,0,exceptional,null,all
+great pilum,25,25,88,0,javelin,11,26,0,exceptional,null,all
+simbilan,25,80,80,10,javelin,8,32,0,exceptional,null,all
+spiculum,25,98,73,20,javelin,13,38,0,exceptional,null,all
+harpoon,25,25,119,-10,javelin,13,35,0,exceptional,null,all
+hyperion javelin,40,98,123,-10,javelin,21,57,0,elite,null,all
+stygian pilum,46,118,112,0,javelin,14,64,0,elite,null,all
+balrog spear,53,127,95,10,javelin,33,63,0,elite,null,all
+ghost glaive,59,89,137,20,javelin,19,60,0,elite,null,all
+winged harpoon,65,76,145,-10,javelin,27,35,0,elite,null,all
+club,0,0,0,-10,mace,1,6,2,normal,24,all
+spiked club,4,0,0,0,mace,5,8,2,normal,36,all
+mace,0,27,0,0,mace,3,10,2,normal,60,all
+morning star,0,36,0,10,mace,7,16,3,normal,72,all
+flail,0,41,35,-10,mace,1,24,5,normal,30,all
+war hammer,0,53,0,20,mace,19,29,4,normal,55,all
+cudgel,18,25,0,-10,mace,6,21,2,exceptional,24,all
+barbed club,20,30,0,0,mace,13,25,3,exceptional,36,all
+flanged mace,23,61,0,0,mace,15,23,2,exceptional,60,all
+jagged start,25,74,0,10,mace,20,31,3,exceptional,72,all
+knout,25,82,73,-10,mace,13,35,5,exceptional,30,all
+battle hammer,25,100,0,20,mace,35,58,4,exceptional,55,all
+truncheon,39,88,43,-10,mace,35,43,2,elite,55,all
+tyrant club,42,133,0,0,mace,32,58,3,elite,65,all
+reinforced mace,47,145,46,0,mace,41,49,2,elite,60,all
+devil start,52,153,44,10,mace,43,53,3,elite,72,all
+sourge,57,125,77,-10,mace,3,80,5,elite,65,all
+legendary mallet,61,189,0,20,mace,50,61,4,elite,65,all
+scepter,0,25,0,0,scepter,6,11,2,normal,50,all
+grand scepter,0,37,0,10,scepter,8,18,3,normal,60,all
+war scepter,0,55,0,-10,scepter,10,17,5,normal,70,all
+rune scepter,19,58,0,0,scepter,13,24,2,normal,50,all
+holy water sprinkler,25,76,0,10,scepter,14,36,3,exceptional,60,all
+divine scepter,25,103,0,-10,scepter,16,38,5,exceptional,70,all
+mighty scepter,46,125,65,0,scepter,40,52,2,exceptional,50,all
+seraph rod,57,108,69,10,scepter,45,54,3,elite,60,all
+caduceus,66,97,70,-10,scepter,37,43,5,elite,70,all
+short sword,0,0,0,0,sword,2,7,2,normal,24,all
+scimitar,0,0,21,-20,sword,2,6,2,normal,22,all
+sabre,0,25,25,-10,sword,3,8,2,normal,32,all
+falchion,0,33,0,20,sword,9,17,2,normal,32,all
+crystal sword,0,43,0,0,sword,5,15,6,normal,20,all
+broad sword,0,48,0,0,sword,7,14,4,normal,32,all
+long sword,0,55,39,-10,sword,3,19,4,normal,44,all
+war sword,0,71,45,0,sword,8,20,3,normal,44,all
+gladius,18,25,0,0,sword,18,22,2,exceptional,24,all
+cutlass,25,25,52,-20,sword,8,21,2,exceptional,22,all
+shamshir,23,58,58,-10,sword,10,24,2,exceptional,32,all
+tulwar,25,70,42,20,sword,16,35,2,exceptional,32,all
+dimensional blade,25,85,60,0,sword,13,35,6,exceptional,20,all
+battle sword,25,92,43,0,sword,16,34,4,exceptional,32,all
+rune sword,25,103,79,-10,sword,10,42,4,exceptional,44,all
+ancient sword,25,127,88,0,sword,18,43,3,exceptional,44,all
+falcata,42,150,88,0,sword,31,59,2,elite,24,all
+ataghan,45,135,95,-20,sword,26,46,2,elite,22,all
+elegant blade,47,109,122,-10,sword,33,45,2,elite,32,all
+hydra edge,51,142,105,20,sword,28,68,2,elite,32,all
+phase blade,54,25,136,0,sword,31,35,6,elite,null,all
+conquest sword,58,142,112,0,sword,37,53,4,elite,32,all
+cryptic sword,61,99,109,-10,sword,5,77,4,elite,44,all
+mythical sword,66,147,124,0,sword,40,50,3,elite,44,all
+wand,0,0,0,0,wand,2,4,1,normal,15,all
+yew wand,0,0,0,10,wand,2,8,1,normal,15,all
+bone wand,0,0,0,-20,wand,3,7,2,normal,15,all
+grim wand,0,0,0,0,wand,5,11,2,normal,15,all
+burnt wand,19,25,0,0,wand,8,18,2,exceptional,15,all
+petrified wand,25,25,0,10,wand,8,24,2,exceptional,15,all
+tomb wand,25,25,0,-20,wand,10,22,2,exceptional,15,all
+grave wand,25,25,0,0,wand,13,29,2,exceptional,15,all
+polished wand,41,25,0,0,wand,18,33,2,elite,22,all
+ghost wand,48,25,0,10,wand,20,42,2,elite,14,all
+lich wand,56,25,0,-20,wand,10,31,2,elite,17,all
+unearthed wand,64,25,0,0,wand,22,28,2,elite,18,all
+maiden javelin,17,33,47,-10,amazonjav,8,14,0,normal,null,amazon
+ceremonial javelin,26,25,109,-10,amazonjav,18,35,0,exceptional,null,amazon
+matriarchal javelin,48,107,151,-10,amazonjav,30,54,0,elite,null,amazon
+katar,0,20,20,-10,claw,4,7,2,normal,48,assassin
+wrist blade,0,33,33,0,claw,5,9,2,normal,52,assassin
+hatchet hands,0,37,37,10,claw,2,15,2,normal,56,assassin
+cestus,0,42,42,0,claw,7,15,2,normal,72,assassin
+claws,0,46,46,-10,claw,8,15,3,normal,64,assassin
+blade talons,0,50,50,-20,claw,10,14,3,normal,69,assassin
+scissors katar,0,55,55,-10,claw,9,17,3,normal,68,assassin
+quhab,21,57,57,0,claw,11,24,3,exceptional,48,assassin
+wrist spike,24,66,66,-10,claw,13,27,2,exceptional,56,assassin
+fascia,27,69,69,10,claw,8,37,2,exceptional,64,assassin
+hand scythe,30,73,73,-10,claw,16,37,2,exceptional,72,assassin
+greater claws,33,76,76,-20,claw,18,37,3,exceptional,52,assassin
+scissors quhab,40,82,82,0,claw,19,40,3,exceptional,68,assassin
+suwayyah,44,99,99,0,claw,39,52,3,elite,48,assassin
+wrist sword,46,105,105,-10,claw,34,45,3,elite,56,assassin
+war fist,51,108,108,10,claw,44,53,2,elite,64,assassin
+battle cestus,54,110,110,-10,claw,36,42,2,elite,72,assassin
+feral claws,58,113,113,-20,claw,22,53,3,elite,52,assassin
+runic talons,60,115,115,-30,claw,24,44,3,elite,69,assassin
+scissors suwayyah,64,118,118,0,claw,40,51,3,elite,68,assassin
+eagle orb,0,0,0,-10,orb,2,5,2,normal,20,sorceress
+sacred globe,0,0,0,-10,orb,3,8,2,normal,30,sorceress
+smoked sphere,0,0,0,0,orb,4,10,2,normal,35,sorceress
+clasped orb,0,0,0,0,orb,5,12,2,normal,40,sorceress
+jared's s,ne,0,0,0,10,orb,8,18,3,normal,50,sorceress
+glowing orb,24,0,0,-10,orb,8,21,2,exceptional,20,sorceress
+crystalline globe,27,0,0,-10,orb,10,26,2,exceptional,30,sorceress
+cloudy sphere,30,0,0,0,orb,11,29,2,exceptional,35,sorceress
+sparkling ball,34,0,0,0,orb,13,32,2,exceptional,40,sorceress
+swirling crystal,37,0,0,10,orb,18,42,3,exceptional,50,sorceress
+heavenly s,ne,44,0,0,-10,orb,21,46,2,elite,20,sorceress
+eldritch orb,50,0,0,-10,orb,18,50,2,elite,30,sorceress
+demon heart,56,0,0,0,orb,23,55,2,elite,35,sorceress
+vortex orb,63,0,0,0,orb,12,66,2,elite,40,sorceress
+dimensional shard,66,0,0,10,orb,30,53,3,elite,50,sorceress

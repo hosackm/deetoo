@@ -1,0 +1,16 @@
+base_name,required_level,required_strength,max_durability,defense_min,defense_max,quality
+leather gloves,0,0,12,2,3,normal
+heavy gloves,0,0,14,5,6,normal
+chain gloves,0,25,16,8,9,normal
+light gauntlets,0,45,18,9,11,normal
+gauntlets,0,60,24,12,15,normal
+demonhide gloves,24,20,12,28,35,exceptional
+sharkskin gloves,25,20,14,33,39,exceptional
+heavy bracers,25,58,16,37,44,exceptional
+battle gauntlets,25,88,18,39,47,exceptional
+war gauntlets,25,110,24,43,53,exceptional
+bramble mitts,42,50,12,54,62,elite
+vampirebone gloves,47,50,14,56,65,elite
+vambraces,51,106,16,59,67,elite
+crusader gauntlets,57,151,18,59,68,elite
+ogre gauntlets,64,185,24,62,71,elite

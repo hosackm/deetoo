@@ -1,0 +1,136 @@
+base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,two_hand_damage_min,two_hand_damage_max,max_sockets,quality,max_durability,char_class
+large axe,0,35,0,-10,axe,null,null,6,13,4,normal,30,all
+broad axe, 0,48,0,0,axe,null,null,10,18,5,normal,35,all
+battle axe,0,54,0,10,axe,null,null,12,32,5,normal,40,all
+great axe,0,63,0,-10,axe,null,null,9,30,6,normal,50,all
+giant axe,0,70,0,10,axe,null,null,22,45,6,normal,50,all
+military axe,25,73,0,-10,axe,null,null,14,34,4,exceptional,30,all
+bearded axe,25,92,0,0,axe,null,null,21,49,5,exceptional,35,all
+tabar,25,101,0,10,axe,null,null,24,77,5,exceptional,40,all
+gothic axe,25,115,79,-10,axe,null,null,18,70,5,exceptional,40,all
+ancient axe,25,125,0,10,axe,null,null,43,85,6,exceptional,50,all
+feral axe,42,196,0,-15,axe,null,null,25,123,4,elite,30,all
+silver-edged axe,48,166,65,0,axe,null,null,61,110,5,elite,35,all
+decapitator,54,189,33,10,axe,null,null,49,137,5,elite,40,all
+champion axe,61,167,59,-10,axe,null,null,59,94,6,elite,50,all
+glorious axe,66,164,55,10,axe,null,null,60,124,6,elite,50,all
+short box,0,0,15,5,bow,null,null,1,4,3,normal,null,all
+hunter's bow,0,0,28,-10,bow,null,null,2,6,4,normal,null,all
+long bow,0,22,19,0,bow,null,null,3,10,5,normal,null,all
+composite bow,0,25,35,-10,bow,null,null,4,8,4,normal,null,all
+short battle bow,0,30,40,0,bow,null,null,5,11,5,normal,null,all
+long battle bow,0,40,50,10,bow,null,null,3,18,6,normal,null,all
+short war bow,0,35,55,0,bow,null,null,6,14,5,normal,null,all
+long war bow,0,50,65,10,bow,null,null,3,23,6,normal,null,all
+edge bow,18,25,43,5,bow,null,null,6,19,3,exceptional,null,all
+razor bow,21,25,62,-10,bow,null,null,8,22,4,exceptional,null,all
+cedar bow,23,53,48,0,bow,null,null,10,29,5,exceptional,null,all
+double bow,25,58,73,0,bow,null,null,11,26,4,exceptional,null,all
+short siege bow,25,65,80,0,bow,null,null,13,30,5,exceptional,null,all
+large siege bow,25,80,95,10,bow,null,null,10,42,6,exceptional,null,all
+rune bow,25,73,103,0,bow,null,null,14,35,5,exceptional,null,all
+gothic bow,25,95,118,10,bow,null,null,10,50,6,exceptional,null,all
+spider bow,41,64,143,5,bow,null,null,23,50,3,elite,null,all
+blade bow,45,76,119,-10,bow,null,null,21,41,4,elite,null,all
+shadow bow,47,52,188,0,bow,null,null,15,59,5,elite,null,all
+great bow,51,121,107,-10,bow,null,null,12,52,4,elite,null,all
+diamond bow,54,89,132,0,bow,null,null,33,40,5,elite,null,all
+crusader bow,57,97,121,10,bow,null,null,15,63,6,elite,null,all
+ward bow,60,72,146,0,bow,null,null,20,53,5,elite,null,all
+hydra bow,63,134,167,10,bow,null,null,10,68,6,elite,null,all
+light crossbow,0,21,27,-10,crossbow,null,null,6,9,3,normal,null,all
+crossbow,0,40,33,0,crossbow,null,null,9,16,4,normal,null,all
+heavy crossbow,0,60,40,10,crossbow,null,null,14,26,6,normal,null,all
+repeating crossbow,0,40,50,-40,crossbow,null,null,6,12,5,normal,null,all
+arablest,22,52,61,-10,crossbow,null,null,14,27,3,exceptional,null,all
+siege crossbow,25,80,70,0,crossbow,null,null,20,42,4,exceptional,null,all
+ballista,25,110,80,10,crossbow,null,null,35,55,6,exceptional,null,all
+chu-ko-nu,25,80,95,-60,crossbow,null,null,14,32,5,exceptional,null,all
+pellet bow,42,83,155,-10,crossbow,null,null,28,73,3,elite,null,all
+gorgon crossbow,50,117,105,0,crossbow,null,null,25,87,4,elite,null,all
+colossus crossbow,56,163,77,10,crossbow,null,null,32,91,6,elite,null,all
+demon crossbow,63,141,98,-60,crossbow,null,null,26,40,5,elite,null,all
+maul,0,69,0,10,mace,null,null,30,43,6,normal,60,all
+great maul,0,99,0,20,mace,null,null,38,58,6,normal,60,all
+war club,25,124,0,10,mace,null,null,53,78,6,exceptional,60,all
+martel de fer,25,169,0,20,mace,null,null,61,99,6,exceptional,60,all
+ogre maul,51,225,0,10,mace,null,null,77,106,6,elite,60,all
+thunder maul,65,253,0,20,mace,null,null,33,180,6,elite,60,all
+bardiche,0,40,0,10,polearm,null,null,1,27,3,normal,50,all
+voulge,0,50,0,0,polearm,null,null,6,21,4,normal,50,all
+scythe,0,41,41,-10,polearm,null,null,8,20,5,normal,65,all
+poleaxe,0,62,0,10,polearm,null,null,18,39,5,normal,65,all
+halberd,0,75,47,0,polearm,null,null,12,45,6,normal,55,all
+war scythe,0,80,80,-10,polearm,null,null,15,36,6,normal,55,all
+lochaber axe,21,80,0,10,polearm,null,null,6,58,3,exceptional,50,all
+bill,25,95,0,0,polearm,null,null,14,53,4,exceptional,50,all
+battle scythe,25,82,82,-10,polearm,null,null,18,45,5,exceptional,65,all
+partizan,23,113,67,10,polearm,null,null,34,75,5,exceptional,65,all
+bec-de-corbin,25,133,91,0,polearm,null,null,13,85,6,exceptional,55,all
+grim scythe,25,140,140,-10,polearm,null,null,30,70,6,exceptional,55,all
+ogre axe,45,195,75,0,polearm,null,null,28,145,3,elite,50,all
+colossus voulge,48,210,55,10,polearm,null,null,17,165,4,elite,50,all
+thresher,53,152,118,-10,polearm,null,null,12,141,5,elite,65,all
+cryptic axe,59,165,103,10,polearm,null,null,33,150,5,elite,65,all
+great poleaxe,63,179,99,0,polearm,null,null,46,127,6,elite,55,all
+giant thresher,66,188,140,-10,polearm,null,null,40,114,6,elite,55,all
+spear,0,0,0,-10,spear,null,null,3,15,3,normal,30,all
+trident,0,38,24,0,spear,null,null,9,15,4,normal,35,all
+brandistock,0,40,50,-20,spear,null,null,7,17,5,normal,28,all
+spetum,0,54,35,0,spear,null,null,15,23,6,normal,28,all
+pike,0,60,45,20,spear,null,null,14,53,6,normal,25,all
+war spear,21,25,25,-10,spear,null,null,10,37,3,exceptional,30,all
+fuscina,24,77,25,0,spear,null,null,19,37,4,exceptional,35,all
+war fork,25,80,95,-20,spear,null,null,16,40,5,exceptional,28,all
+yari,25,101,0,0,spear,null,null,29,59,6,exceptional,28,all
+lance,25,110,88,20,spear,null,null,27,114,6,exceptional,25,all
+hyperion spear,43,155,120,-10,spear,null,null,35,119,3,elite,30,all
+stygian pike,49,168,97,0,spear,null,null,29,144,4,elite,35,all
+mancatcher,55,132,134,-20,spear,null,null,42,92,5,elite,28,all
+ghost spear,62,122,163,0,spear,null,null,18,155,6,elite,28,all
+war pike,66,165,106,20,spear,null,null,33,178,6,elite,25,all
+short staff,0,0,0,-10,staff,null,null,1,5,2,normal,20,all
+long staff,0,0,0,0,staff,null,null,2,8,3,normal,30,all
+gnarled staff,0,0,0,10,staff,null,null,4,12,4,normal,35,all
+battle staff,0,0,0,0,staff,null,null,6,13,4,normal,40,all
+war staff,0,0,0,20,staff,null,null,12,28,6,normal,50,all
+jo staff,18,25,0,-10,staff,null,null,6,21,2,exceptional,20,all
+quarterstaff,21,25,0,0,staff,null,null,8,26,3,exceptional,30,all
+cedar staff,25,25,0,10,staff,null,null,11,32,4,exceptional,35,all
+gothic staff,25,25,0,0,staff,null,null,14,34,4,exceptional,40,all
+rune staff,25,25,0,20,staff,null,null,24,58,6,exceptional,50,all
+walking stick,43,25,0,-10,staff,null,null,69,85,2,elite,20,all
+stalagmite,49,63,35,10,staff,null,null,75,107,3,elite,30,all
+elder staff,55,44,37,10,staff,null,null,80,93,4,elite,35,all
+shillelagh,62,52,27,0,staff,null,null,65,108,4,elite,40,all
+archon staff,66,34,0,10,staff,null,null,83,999,6,elite,26,all
+stag bow,14,30,45,0,amazonbow,null,null,7,12,5,normal,null,amazon
+reflex bow,20,35,60,10,amazonbow,null,null,9,19,5,normal,null,amazon
+maiden spear,14,54,40,0,amazonspear,null,null,18,24,6,normal,28,amazon
+maiden pike,20,63,52,10,amazonspear,null,null,23,55,6,normal,25,amazon
+ashwood bow,29,56,77,0,amazonbow,null,null,16,29,5,exceptional,null,amazon
+ceremonial bow,35,73,110,10,amazonbow,null,null,19,41,5,exceptional,null,amazon
+ceremonial spear,32,101,80,0,amazonspear,null,null,34,51,6,exceptional,28,amazon
+ceremonial pike,38,115,98,20,amazonspear,null,null,32,101,6,exceptional,25,amazon
+matriarchal bow,39,87,187,-10,amazonbow,null,null,20,47,5,elite,null,amazon
+grand matron bow,58,108,152,10,amazonbow,null,null,14,72,5,elite,null,amazon
+matriarchal spear,45,114,142,0,amazonspear,null,null,65,95,6,elite,28,amazon
+matriarchal pike,60,132,149,20,amazonspear,null,null,37,153,6,elite,25,amazon
+two-handed sword,0,35,27,0,sword,2,9,8,17,3,normal,44,all
+claymore,0,47,0,10,sword,5,12,13,30,4,normal,50,all
+giant sword,0,56,34,0,sword,3,16,9,28,4,normal,50,all
+bastard sword,0,62,0,10,sword,7,19,20,28,4,normal,40,all
+flamberge,0,70,49,-10,sword,9,15,13,16,5,normal,50,all
+great sword,0,100,60,10,sword,12,20,25,42,6,normal,50,all
+espandon,25,73,61,0,sword,8,26,18,40,3,exceptional,44,all
+dacian falx,25,91,20,10,sword,13,30,26,61,4,exceptional,50,all
+tusk sword,25,104,71,0,sword,10,37,19,58,4,exceptional,50,all
+gothic sword,25,113,20,10,sword,14,40,39,60,4,exceptional,40,all
+zweihander,25,125,94,-10,sword,19,35,29,54,5,exceptional,50,all
+executioner sword,25,170,110,10,sword,24,40,47,80,6,exceptional,50,all
+legend sword,44,175,100,-15,sword,20,56,50,94,3,elite,44,all
+highland blade,49,171,104,-5,sword,22,62,67,96,4,elite,50,all
+balrog blade,53,185,87,0,sword,15,75,55,118,4,elite,50,all
+champion sword,57,163,103,-10,sword,24,54,71,83,4,elite,40,all
+colossus sword,60,182,95,10,sword,26,70,61,121,5,elite,50,all
+colossus blade,63,189,110,5,sword,25,65,58,115,6,elite,50,all

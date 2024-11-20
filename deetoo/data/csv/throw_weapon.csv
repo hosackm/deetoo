@@ -1,0 +1,13 @@
+base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,throw_damage_min,throw_damage_max,quality
+throwing knife,0,0,21,0,throw,2,3,4,9,normal
+balanced knife,0,0,51,-20,throw,1,8,6,11,normal
+throwing axe,0,0,40,10,throw,4,7,8,12,normal
+balanced axe,0,0,57,-10,throw,5,10,12,15,normal
+battle dart,19,25,52,0,throw,8,16,11,24,exceptional
+war dart,22,25,97,-20,throw,6,24,14,27,exceptional
+francisca,22,25,80,10,throw,11,22,18,33,exceptional
+hurlbat,25,25,106,-10,throw,13,27,24,34,exceptional
+flying knife,48,48,141,0,throw,23,54,23,54,elite
+winged knife,57,45,142,-20,throw,27,35,23,39,elite
+flying axe,42,88,108,10,throw,17,65,15,66,elite
+winged axe,60,96,122,-10,throw,7,60,11,56,elite

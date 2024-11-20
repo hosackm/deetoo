@@ -1,0 +1,55 @@
+base_name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max,smite_damage_min,smite_damage_max,chance_to_block_pct,char_class
+buckler,0,12,1,normal,12,4,6,1,3,30,all
+small shield,0,22,2,normal,16,8,10,2,3,35,all
+large shield,0,34,3,normal,24,12,14,2,4,35,all
+kite shield,0,47,3,normal,30,16,18,2,5,38,all
+spiked shield,0,30,2,normal,40,15,25,5,9,40,all
+bone shield,0,25,2,normal,40,10,30,3,6,50,all
+tower shield,0,75,3,normal,60,22,25,1,5,54,all
+gothic shield,0,60,3,normal,40,30,35,2,6,46,all
+defender,34,38,1,exceptional,68,41,49,8,12,40,all
+round shield,25,53,2,exceptional,64,47,55,7,14,42,all
+scutum,25,71,3,exceptional,64,53,61,11,15,44,all
+dragon shield,25,91,3,exceptional,76,59,67,15,24,48,all
+barbed shield,25,65,2,exceptional,55,68,78,18,35,47,all
+grim shield,25,58,2,exceptional,70,50,151,14,20,54,all
+pavise,25,133,3,exceptional,72,68,78,10,17,50,all
+ancient shield,25,110,3,exceptional,80,80,93,12,16,46,all
+heater,43,77,2,elite,88,95,110,16,30,52,all
+luna,45,100,2,elite,84,108,123,17,29,50,all
+hyperion,48,127,3,elite,82,119,135,14,32,54,all
+monarch,54,156,4,elite,86,133,148,12,34,52,all
+blade barrier,51,118,3,elite,83,147,163,26,40,50,all
+troll nest,57,106,3,elite,74,158,173,24,38,50,all
+aegis,59,219,4,elite,92,145,161,18,28,54,all
+ward,63,185,4,elite,100,153,170,11,35,54,all
+preserved head,0,12,2,normal,20,2,5,0,0,23,necromancer
+zombie head,6,14,2,normal,20,4,8,0,0,25,necromancer
+unraveller head,12,18,2,normal,20,6,10,0,0,28,necromancer
+gargoyle head,15,20,2,normal,20,10,16,0,0,30,necromancer
+demon head,18,25,2,normal,20,15,20,0,0,32,necromancer
+mummified trophy,24,38,2,exceptional,20,38,48,0,0,23,necromancer
+fetish trophy,29,41,2,exceptional,20,41,52,0,0,25,necromancer
+sexton trophy,33,47,2,exceptional,20,44,55,0,0,28,necromancer
+cantor trophy,36,50,2,exceptional,20,50,64,0,0,30,necromancer
+hierophant trophy,40,58,2,exceptional,20,58,70,0,0,32,necromancer
+minion skull,44,77,2,elite,20,95,139,0,0,23,necromancer
+hellspawn skull,50,82,2,elite,20,96,141,0,0,25,necromancer
+overseer skull,49,91,2,elite,20,98,142,0,0,28,necromancer
+succubus skull,60,95,2,elite,20,100,146,0,0,30,necromancer
+bloodlord skull,65,106,2,elite,20,103,148,0,0,32,necromancer
+targe,3,16,4,normal,20,8,12,2,6,40,paladin
+rondache,6,26,4,normal,30,10,18,2,8,45,paladin
+heraldic shield,12,30,4,normal,40,16,26,3,9,50,paladin
+aerin shield,15,50,4,normal,50,26,36,4,10,52,paladin
+crown shield,18,65,4,normal,60,30,40,4,12,55,paladin
+akaran targe,26,44,4,exceptional,20,101,125,12,16,40,paladin
+akaran rondache,30,59,4,exceptional,30,113,137,15,20,45,paladin
+protector shield,34,69,4,exceptional,40,129,153,18,24,50,paladin
+gilded shield,38,89,4,exceptional,50,144,168,20,28,52,paladin
+royal shield,41,114,4,exceptional,60,156,181,24,32,55,paladin
+sacred targe,47,86,4,elite,45,126,158,22,70,60,paladin
+sacred rondache,52,109,4,elite,68,138,164,35,58,58,paladin
+kurast shield,55,124,4,elite,55,154,172,10,82,55,paladin
+zakarum shield,61,142,4,elite,65,169,193,46,46,52,paladin
+vortex shield,66,148,4,elite,90,182,225,5,87,49,paladin

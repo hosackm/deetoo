@@ -1,0 +1,16 @@
+base_name,required_level,required_strength,kick_damage_min,kick_damage_max,quality,max_durability,defense_min,defense_max
+boots,0,0,3,8,normal,12,2,3
+heavy boots,0,18,4,10,normal,14,5,6
+chain boots,0,30,6,12,normal,16,8,9
+light plated boots,0,50,8,16,normal,18,9,11
+greaves,0,70,10,20,normal,24,12,15
+demonhide boots,24,20,26,46,exceptional,12,28,35
+sharkskin boots,25,47,28,50,exceptional,14,33,39
+mesh boots,25,65,23,52,exceptional,16,37,44
+battle boots,25,95,37,64,exceptional,18,39,47
+war boots,25,125,39,80,exceptional,24,43,53
+wyrmhide boots,45,50,65,100,elite,12,54,62
+scarabshell boots,49,91,60,110,elite,14,56,65
+boneweave boots,54,118,69,118,elite,14,59,67
+mirrored boots,60,163,50,145,elite,18,59,68
+myrmidon greaves,65,208,83,149,elite,24,62,71

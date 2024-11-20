@@ -1,0 +1,46 @@
+base_name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max
+quilted armor,0,12,2,normal,20,8,11
+leather armor,0,15,2,normal,24,14,17
+hard leather armor,0,20,2,normal,28,21,24
+studded leather,0,27,2,normal,32,32,35
+ring mail,0,36,3,normal,26,45,48
+scale mail,0,44,2,normal,36,57,60
+chain mail,0,48,2,normal,45,72,75
+breast plate,0,30,3,normal,50,65,68
+splint mail,0,51,2,normal,30,90,95
+plate mail,0,65,2,normal,60,108,116
+field plate,0,55,2,normal,48,101,105
+gothic plate,0,70,4,normal,55,128,135
+light plate,0,41,3,normal,60,90,107
+full plate mail,0,80,4,normal,70,150,161
+ancient armor,0,100,4,normal,60,218,233
+ghost armor,22,38,2,exceptional,20,102,117
+serpentskin armor,24,43,2,exceptional,24,111,126
+demonhide armor,25,50,2,exceptional,28,122,136
+trellised armor,25,61,2,exceptional,32,138,153
+linked mail,25,74,3,exceptional,26,158,172
+tigulated mail,25,86,2,exceptional,36,176,190
+mesh armor,25,92,2,exceptional,45,198,213
+cuirass,25,65,3,exceptional,50,188,202
+russet armor,25,97,2,exceptional,30,225,243
+templar coat,25,118,2,exceptional,60,252,274
+sharktooth armor,22,103,3,exceptional,48,242,258
+embossed plate,24,125,4,exceptional,55,282,303
+mage plate,25,55,3,exceptional,60,225,261
+chaos armor,25,140,4,exceptional,70,315,342
+ornate plate,25,170,4,exceptional,60,417,450
+dusk shroud,49,77,4,elite,20,361,467
+wyrmhide,50,84,4,elite,24,364,470
+scarab husk,51,95,4,elite,28,369,474
+wire fleece,53,111,4,elite,32,375,481
+diamond mail,54,131,4,elite,26,383,489
+loricated mail,55,149,4,elite,36,390,496
+boneweave,47,158,4,elite,45,399,505
+great hauberk,56,118,4,elite,50,395,501
+balrog skin,57,165,4,elite,30,410,517
+hellforge plate,59,196,4,elite,60,421,530
+kraken shell,61,174,4,elite,48,417,523
+lacquered plate,62,208,4,elite,55,433,541
+archon plate,63,103,4,elite,60,410,524
+shadow plate,64,230,4,elite,70,446,557
+sacred armor,66,232,4,elite,60,487,600

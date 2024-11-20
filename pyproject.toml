@@ -1,0 +1,15 @@
+[project]
+name = "deetoo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ruff>=0.7.4",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "black>=24.10.0",
+    "pytest>=8.3.3",
+]
