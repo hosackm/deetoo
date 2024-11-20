@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,max_durability,defense_min,defense_max,quality
+name,required_level,required_strength,max_durability,defense_min,defense_max,quality
 leather gloves,0,0,12,2,3,normal
 heavy gloves,0,0,14,5,6,normal
 chain gloves,0,25,16,8,9,normal

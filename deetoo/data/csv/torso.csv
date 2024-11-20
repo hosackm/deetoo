@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max
+name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max
 quilted armor,0,12,2,normal,20,8,11
 leather armor,0,15,2,normal,24,14,17
 hard leather armor,0,20,2,normal,28,21,24

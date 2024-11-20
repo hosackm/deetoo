@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,potion_slots,quality,max_durability,defense_min,defense_max
+name,required_level,required_strength,potion_slots,quality,max_durability,defense_min,defense_max
 sash,0,0,8,normal,12,2,2
 light belt,0,0,8,normal,14,3,3
 belt,0,25,12,normal,16,5,5

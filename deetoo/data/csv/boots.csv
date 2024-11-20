@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,kick_damage_min,kick_damage_max,quality,max_durability,defense_min,defense_max
+name,required_level,required_strength,kick_damage_min,kick_damage_max,quality,max_durability,defense_min,defense_max
 boots,0,0,3,8,normal,12,2,3
 heavy boots,0,18,4,10,normal,14,5,6
 chain boots,0,30,6,12,normal,16,8,9

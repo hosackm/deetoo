@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,max_sockets,quality,max_durability,char_class
+name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,max_sockets,quality,max_durability,char_class
 hand axe,0,0,0,0,axe,3,6,2,normal,28,all
 axe,0,32,0,10,axe,4,11,4,normal,24,all
 double axe,0,43,0,10,axe,5,13,5,normal,24,all

@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,max_durability,defense_min,defense_max,max_sockets,quality,char_class
+name,required_level,required_strength,max_durability,defense_min,defense_max,max_sockets,quality,char_class
 cap,0,0,12,3,5,2,normal,all
 skull cap,0,15,18,8,11,2,normal,all
 helm,0,26,24,15,18,2,normal,all

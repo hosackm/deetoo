@@ -20,9 +20,13 @@ def database_file(tmpdir):
 
 
 def test_db_generate_creates_tables(database_file):
-    assert len(get_database(database_file).tables()) == 9
+    tables = get_database(database_file).tables()
+    assert len(tables) == 1
+    assert tables.pop() == "base_items"
 
 
 def test_read_tables_with(database_file):
     with db_context(database_file) as db:
-        assert len(db.tables()) == 9
+        tables = db.tables()
+        assert len(tables) == 1
+        assert tables.pop() == "base_items"

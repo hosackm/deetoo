@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,throw_damage_min,throw_damage_max,quality
+name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,throw_damage_min,throw_damage_max,quality
 throwing knife,0,0,21,0,throw,2,3,4,9,normal
 balanced knife,0,0,51,-20,throw,1,8,6,11,normal
 throwing axe,0,0,40,10,throw,4,7,8,12,normal

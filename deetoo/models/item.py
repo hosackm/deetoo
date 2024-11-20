@@ -43,7 +43,7 @@ class JSONEncodeMixin:
 
 @dataclass
 class ItemBase(JSONEncodeMixin):
-    base_name: str = "NO_BASE_NAME"
+    name: str = "NO_BASE_NAME"
     required_level: int = 0
     item_type: ItemType = ""
 

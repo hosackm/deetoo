@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max,smite_damage_min,smite_damage_max,chance_to_block_pct,char_class
+name,required_level,required_strength,max_sockets,quality,max_durability,defense_min,defense_max,smite_damage_min,smite_damage_max,chance_to_block_pct,char_class
 buckler,0,12,1,normal,12,4,6,1,3,30,all
 small shield,0,22,2,normal,16,8,10,2,3,35,all
 large shield,0,34,3,normal,24,12,14,2,4,35,all

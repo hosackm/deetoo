@@ -1,4 +1,4 @@
-base_name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,two_hand_damage_min,two_hand_damage_max,max_sockets,quality,max_durability,char_class
+name,required_level,required_strength,required_dexterity,attack_speed,weapon_class,one_hand_damage_min,one_hand_damage_max,two_hand_damage_min,two_hand_damage_max,max_sockets,quality,max_durability,char_class
 large axe,0,35,0,-10,axe,null,null,6,13,4,normal,30,all
 broad axe, 0,48,0,0,axe,null,null,10,18,5,normal,35,all
 battle axe,0,54,0,10,axe,null,null,12,32,5,normal,40,all
