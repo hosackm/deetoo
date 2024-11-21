@@ -24,5 +24,11 @@ if __name__ == "__main__":
 
     with db_context("db.json") as db:
         base_items = db.table("base_items")
-        swords = base_items.search(Query().name.test(fuzzy, args.query))
-        print(json.dumps(swords, indent=2, sort_keys=True))
+        unique_items = db.table("unique_items")
+
+        results = {
+            "base_items": base_items.search(Query().name.test(fuzzy, args.query)),
+            "unique_items": unique_items.search(Query().name.test(fuzzy, args.query)),
+        }
+        results["count"] = len(results["base_items"]) + len(results["unique_items"])
+        print(json.dumps(results, indent=2, sort_keys=True))
