@@ -1,0 +1,158 @@
+name,base_item_name,required_level
+greyform,quilted armor,0
+blinkbat's form,leather armor,12
+the centurion,hard leather armor,14
+twitchthroe,studded leather,16
+darkglow,ring mail,14
+hawkmail,scale mail,15
+venom ward,breast plate,20
+sparking mail,chain mail,17
+iceblink,splint mail,22
+heavenly garb,light plate,29
+boneflesh,plate mail,26
+rockfleece,field plate,28
+rattlecage,gothic plate,29
+goldskin,full plate mail,28
+silks of the victor,ancient armor,28
+the spirit shroud,ghost armor,28
+skin of the vipermagi,serpentskin armor,29
+skin of the flayed one,demonhide armor,31
+iron pelt,trellised armor,33
+spirit forge,linked mail,35
+crow caw,tigulated mail,37
+duriel's shell,cuirass,41
+shaftstop,mesh armor,38
+skullder's ire,russet armor,42
+que-hegan's wisdom,mage plate,51
+guardian angel,templar coat,45
+toothrow,sharktooth armor,48
+atma's wail,embossed plate,51
+black hades,chaos armor,53
+corpsemourn,ornate plate,55
+ormus' robes,dusk shroud,75
+the gladiator's bane,wire fleece,85
+arkaine's valor,balrog skin,85
+leviathan,kraken shell,65
+steel carapace,shadow plate,66
+templar's might,sacred armor,74
+tyrael's might,sacred armor,84
+string of ears,demonhide sash,29
+razortail,sharkskin belt,32
+gloom's trap,mesh belt,36
+snowclash,battle belt,42
+thundergod's vigor,war belt,47
+arachnid mesh,spiderweb sash,80
+nosferatu's coil,vampirefang belt,51
+verdungo's hearty cord,mithril coil,63
+hotspur,boots,5
+gorefoot,heavy boots,9
+treads of cthon,chain boots,15
+goblin toe,light plated boots,22
+tearhaunch,greaves,29
+infernostride,demonhide boots,29
+waterwalk,sharkskin boots,32
+silkweave,mesh boots,36
+war traveler,battle boots,42
+gore rider,war boots,47
+sandstorm trek,scarabshell boots,64
+marrowwalk,boneweave boots,66
+shadow dancer,myrmidon greaves,71
+kira's guardian,tiara,77
+griffon's eye,diadem,76
+the hand of broc,leather gloves,5
+bloodfist,heavy gloves,9
+chance guards,chain gloves,15
+magefist,light gauntlets,23
+frostburn,gauntlets,29
+venom grip,demonhide gloves,29
+gravepalm,sharkskin gloves,32
+ghoulhide,heavy bracers,36
+lava gout,battle gauntlets,42
+hellmouth,war gauntlets,47
+dracul's grasp,vampirebone gloves,76
+soul drainer,vambraces,74
+steelrend,ogre gauntlets,70
+biggin's bonnet,cap,3
+tarnhelm,skull cap,15
+coif of glory,helm,14
+duskdeep,full helm,17
+howltusk,great helm,25
+the face of horror,mask,20
+undead crown,crown,29
+wormskull,bone helm,21
+peasant crown,war hat,28
+rockstopper,sallet,31
+stealskull,casque,35
+darksight helm,basinet,38
+valkyrie wing,winged helm,44
+blackthorn's face,death mask,41
+crown of thieves,grand crown,49
+vampire gaze,grim helm,41
+harlequin crest,shako,62
+steel shade,armet,62
+veil of steel,spired helm,73
+nightwing's veil,spired helm,67
+andariel's visage,demonhead,83
+crown of ages,corona,82
+giant skull,bone visage,65
+pelta lunata,buckler,2
+umbral disk,small shield,9
+stormguild,large shield,13
+steelclash,kite shield,17
+swordback hold,spiked shield,15
+bverrit keep,tower shield,19
+wall of the eyeless,bone shield,20
+the ward,gothic shield,26
+visceratuant,defender,28
+moser's blessed circle,round shield,31
+stormchaser,scutum,35
+tiamat's rebuke,dragon shield,38
+lance guard,barbed shield,35
+gerke's sanctuary,pavise,44
+lidless wall,grim shield,41
+radament's sphere,ancient shield,50
+blackoak shield,luna,61
+stormshield,monarch,73
+spike thorn,blade barrier,70
+medusa's gaze,aegis,76
+head hunter's glory,troll nest,75
+spirit ward,ward,68
+arreat's face,slayer guard,42
+wolfhowl,fury visor,79
+demonhorn's edge,destroyer helm,61
+halaberd's reign,conqueror crown,77
+jalal's mane,totemic mask,42
+cerebus' bite,blood spirit,63
+spirit keeper,earth spirit,67
+ravenlore,sky spirit,74
+homunculus,hierophant trophy,42
+boneflame,succubus skull,72
+darkforce spawn,bloodlord skull,65
+herald of zakarum,gilded shield,level requirement: 42
+alma negra,sacred rondache,level requirement: 77
+dragonscale,zakarum shield,level requirement: 80
+atma's scarab,amulet,60
+crescent moon,amulet,50
+highlord's wrath,amulet,65
+mara's kaleidoscope,amulet,67
+metalgrid,amulet,81
+nokozan relic,amulet,10
+saracen's chance,amulet,47
+seraph's hymn,amulet,65
+the cat's eye,amulet,50
+the eye of etlich,amulet,15
+the mahim-oak curio,amulet,25
+the rising sun,amulet,65
+annihilus,small charm,70
+hellfire torch,large charm,75
+gheed's fortune,grand charm,62
+rainbow facet,jewel,49
+bul-kathos' wedding band,ring,58
+carrion wind,ring,60
+dwarf star,ring,45
+manald heal,ring,15
+nagelring,ring,7
+nature's peace,ring,69
+raven frost,ring,45
+the stone of jordan,ring,29
+whisp projector,ring,76

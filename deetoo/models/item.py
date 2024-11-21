@@ -4,77 +4,16 @@ Models covering itemization in Diablo 2.
 https://diablo-archive.fandom.com/wiki/Items_(Diablo_II)
 """
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from typing import Literal
 
-CharClass = Literal[
-    "all",
-    "amazon",
-    "assassin",
-    "barbarian",
-    "druid",
-    "paladin",
-    "necromancer",
-    "sorceress",
-]
-
-ItemType = Literal[
-    "belt",
-    "boots",
-    "gloves",
-    "helm",
-    "shield",
-    "throw_weapon",
-    "torso",
-    "two_handed_weapon",
-    "weapon",
-]
-
-
-class JSONEncodeMixin:
-    @property
-    def __dict__(self):
-        return asdict(self)
-
-    @property
-    def json(self):
-        return self.__dict__
-
-
-@dataclass
-class ItemBase(JSONEncodeMixin):
-    name: str = "NO_BASE_NAME"
-    required_level: int = 0
-    item_type: ItemType = ""
-
-
-@dataclass
-class WearableMixin:
-    """
-    Characters can wear weapons, armor, shields, etc.
-    """
-
-    required_strength: int = 0
-    max_durability: int = 0
-    quality: Literal["normal", "exceptional", "elite"] = "normal"
-
-
-@dataclass
-class SocketableMixin:
-    """
-    Weapons, shield, helms, and armor can have items inserted into sockets.
-    """
-
-    max_sockets: int = 0
-
-
-@dataclass
-class ClassSpecificMixin:
-    """
-    Weapons, shield, and helms can be specific to a certain character class.
-    """
-
-    char_class: CharClass = "all"
+from .base import (
+    ItemBase,
+    ItemType,
+    WearableMixin,
+    SocketableMixin,
+    ClassSpecificMixin,
+)
 
 
 @dataclass

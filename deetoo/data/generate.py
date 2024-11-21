@@ -18,6 +18,7 @@ from deetoo.models.item import (
     Shield,
     Jewelry,
 )
+from deetoo.models.unique import UniqueItem
 
 
 DATA_FOLDER = Path(__file__).parent.resolve()
@@ -35,7 +36,7 @@ def parse_csv_to_class(filename, cls):
     return objects
 
 
-def read_data():
+def read_base_items_data():
     """
     Reads all item csv files and returns a dictionary containing their
     contents as deetoo.models.item dataclass dictionaries that
@@ -59,13 +60,55 @@ def read_data():
     return items
 
 
+def read_unique_items_data(db):
+    """
+    Read unique data has to do a lookup on the existing base items and get
+    their doc_id as a reference.
+    """
+    uniques = []
+    base_item_name_to_id = {
+        doc["name"]: (doc_id, doc["item_type"])
+        for doc_id, doc in enumerate(db.table("base_items").all(), 1)
+    }
+    with open(CSV_FOLDER / "uniques.csv") as f:
+        rdr = reader(f)
+        headers = next(rdr)
+        for row in rdr:
+            kwargs = extract_base_information(
+                dict(zip(headers, row)),
+                base_item_name_to_id,
+            )
+            uniques.append(UniqueItem(**kwargs).json)
+    return uniques
+
+
+def extract_base_information(data, mapping):
+    """
+    Replace lookup the base item's `doc_id` and `item_type` in the
+    mapping and replace them in the provided data dictionary.
+    """
+    base_item_name = data.get("base_item_name")
+    doc_id, doc_item_type = mapping.get(base_item_name)
+    data["base_item_ref"] = doc_id
+    data["item_type"] = doc_item_type
+    del data["base_item_name"]
+    return data
+
+
 def write_database(filepath):
-    if filepath.exists():
-        filepath.unlink()
+    filepath.unlink(missing_ok=True)
 
     db = TinyDB(filepath)
+
+    # base items
     base_items = db.table("base_items")
-    base_items.insert_multiple(read_data())
+    base_items.insert_multiple(read_base_items_data())
+
+    # unique items
+    unique_items = db.table("unique_items")
+    unique_items.insert_multiple(read_unique_items_data(db))
+
+    # TODO: sets
 
 
 if __name__ == "__main__":
