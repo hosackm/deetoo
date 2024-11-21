@@ -26,9 +26,13 @@ if __name__ == "__main__":
         base_items = db.table("base_items")
         unique_items = db.table("unique_items")
 
+        fuzzy_query = Query().name.test(fuzzy, args.query)
+        base_item_results = base_items.search(fuzzy_query)
+        unique_item_results = unique_items.search(fuzzy_query)
+
         results = {
-            "base_items": base_items.search(Query().name.test(fuzzy, args.query)),
-            "unique_items": unique_items.search(Query().name.test(fuzzy, args.query)),
+            "base_items": base_item_results,
+            "unique_items": unique_item_results,
+            "count": len(base_item_results) + len(unique_item_results),
         }
-        results["count"] = len(results["base_items"]) + len(results["unique_items"])
         print(json.dumps(results, indent=2, sort_keys=True))

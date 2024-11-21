@@ -53,7 +53,7 @@ class Torso(Armor, SocketableMixin):
 
 @dataclass
 class Helm(Armor, SocketableMixin, ClassSpecificMixin):
-    item_type: ItemType = "torso"
+    item_type: ItemType = "helm"
 
 
 @dataclass
