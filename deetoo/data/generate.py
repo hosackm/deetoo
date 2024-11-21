@@ -16,6 +16,7 @@ from deetoo.models.item import (
     Gloves,
     Helm,
     Shield,
+    Jewelry,
 )
 
 
@@ -50,6 +51,7 @@ def read_data():
         (Path("gloves.csv"), Gloves),
         (Path("helm.csv"), Helm),
         (Path("shield.csv"), Shield),
+        (Path("jewelry.csv"), Jewelry),
     ]
     items = []
     for path, cls in mappers:

@@ -143,6 +143,11 @@ class Boots(Armor):
     kick_damage_max: int = 0
 
 
+@dataclass
+class Jewelry(ItemBase):
+    item_type: str = "jewelry"
+
+
 # Item is a broad type that supports the different shapes of data that are attributed
 # to the items in Diablo 2.
 Item = (
@@ -162,9 +167,7 @@ all = [
 ]
 
 
-# TODO: Gems, runes, jewels, amulets, and rings (they require affix support)
-# @dataclass
-# class Jewelry(ItemBase): ...
+# TODO: Gems, runes, jewels
 #
 # @dataclass
 # class Charm(ItemBase): ...
