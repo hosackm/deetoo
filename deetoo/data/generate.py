@@ -5,7 +5,7 @@ Build the TinyDB database from the provided csv files.
 from argparse import ArgumentParser
 from csv import reader
 from pathlib import Path
-from tinydb import TinyDB
+from tinydb import TinyDB, Query
 from deetoo.models.item import (
     Weapon,
     TwoHandWeapon,
@@ -25,18 +25,28 @@ DATA_FOLDER = Path(__file__).parent.resolve()
 CSV_FOLDER = DATA_FOLDER / "csv"
 
 
-def parse_csv_to_class(filename, cls):
+def process_str(val):
+    if val.isdigit():
+        return int(val)
+    elif val == "null":
+        return None
+    return val
+
+
+def parse_csv_to_class(filename, cls, post_process_func=None, db=None):
     objects = []
     with open(filename) as f:
         rdr = reader(f)
         headers = next(rdr)
         for row in rdr:
-            row = [None if col == "null" else col for col in row]
-            objects.append(cls(**dict(zip(headers, row))))
+            data = {key: process_str(val) for key, val in zip(headers, row)}
+            if post_process_func:
+                data = post_process_func(db, data)
+            objects.append(cls(**data))
     return objects
 
 
-def read_base_items_data():
+def read_base_items_data(db=None, post_process_func=None):
     """
     Reads all item csv files and returns a dictionary containing their
     contents as deetoo.models.item dataclass dictionaries that
@@ -65,32 +75,22 @@ def read_unique_items_data(db):
     Read unique data has to do a lookup on the existing base items and get
     their doc_id as a reference.
     """
-    uniques = []
-    base_item_name_to_id = {
-        doc["name"]: (doc_id, doc["item_type"])
-        for doc_id, doc in enumerate(db.table("base_items").all(), 1)
-    }
-    with open(CSV_FOLDER / "uniques.csv") as f:
-        rdr = reader(f)
-        headers = next(rdr)
-        for row in rdr:
-            kwargs = extract_base_information(
-                dict(zip(headers, row)),
-                base_item_name_to_id,
-            )
-            uniques.append(UniqueItem(**kwargs).json)
-    return uniques
+    return [
+        el.json
+        for el in parse_csv_to_class(
+            CSV_FOLDER / "uniques.csv", UniqueItem, resolve_base_reference, db
+        )
+    ]
 
 
-def extract_base_information(data, mapping):
+def resolve_base_reference(db, data):
     """
-    Replace lookup the base item's `doc_id` and `item_type` in the
-    mapping and replace them in the provided data dictionary.
+    Lookup the referred base item by name and copy out its values into
+    data. Delete base_item_name key before returning.
     """
-    base_item_name = data.get("base_item_name")
-    doc_id, doc_item_type = mapping.get(base_item_name)
-    data["base_item_ref"] = doc_id
-    data["item_type"] = doc_item_type
+    base_item = db.table("base_items").get(Query().name == data["base_item_name"])
+    data["base_item_ref"] = base_item.doc_id
+    data["item_type"] = base_item["item_type"]
     del data["base_item_name"]
     return data
 
@@ -105,8 +105,9 @@ def write_database(filepath):
     base_items.insert_multiple(read_base_items_data())
 
     # unique items
-    unique_items = db.table("unique_items")
-    unique_items.insert_multiple(read_unique_items_data(db))
+    unique_table = db.table("unique_items")
+    unique_items = read_unique_items_data(db)
+    unique_table.insert_multiple(unique_items)
 
     # TODO: sets
 
