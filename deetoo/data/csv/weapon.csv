@@ -50,13 +50,13 @@ war hammer,0,53,0,20,mace,19,29,4,normal,55,all
 cudgel,18,25,0,-10,mace,6,21,2,exceptional,24,all
 barbed club,20,30,0,0,mace,13,25,3,exceptional,36,all
 flanged mace,23,61,0,0,mace,15,23,2,exceptional,60,all
-jagged start,25,74,0,10,mace,20,31,3,exceptional,72,all
+jagged star,25,74,0,10,mace,20,31,3,exceptional,72,all
 knout,25,82,73,-10,mace,13,35,5,exceptional,30,all
 battle hammer,25,100,0,20,mace,35,58,4,exceptional,55,all
 truncheon,39,88,43,-10,mace,35,43,2,elite,55,all
 tyrant club,42,133,0,0,mace,32,58,3,elite,65,all
 reinforced mace,47,145,46,0,mace,41,49,2,elite,60,all
-devil start,52,153,44,10,mace,43,53,3,elite,72,all
+devil star,52,153,44,10,mace,43,53,3,elite,72,all
 sourge,57,125,77,-10,mace,3,80,5,elite,65,all
 legendary mallet,61,189,0,20,mace,50,61,4,elite,65,all
 scepter,0,25,0,0,scepter,6,11,2,normal,50,all
@@ -137,7 +137,7 @@ crystalline globe,27,0,0,-10,orb,10,26,2,exceptional,30,sorceress
 cloudy sphere,30,0,0,0,orb,11,29,2,exceptional,35,sorceress
 sparkling ball,34,0,0,0,orb,13,32,2,exceptional,40,sorceress
 swirling crystal,37,0,0,10,orb,18,42,3,exceptional,50,sorceress
-heavenly s,ne,44,0,0,-10,orb,21,46,2,elite,20,sorceress
+heavenly stone,44,0,0,-10,orb,21,46,2,elite,20,sorceress
 eldritch orb,50,0,0,-10,orb,18,50,2,elite,30,sorceress
 demon heart,56,0,0,0,orb,23,55,2,elite,35,sorceress
 vortex orb,63,0,0,0,orb,12,66,2,elite,40,sorceress
