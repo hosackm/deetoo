@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from csv import reader
 from pathlib import Path
 from tinydb import TinyDB, Query
-from deetoo.models.item import (
+from deetoo.models.v1.item import (
     Weapon,
     TwoHandWeapon,
     ThrowWeapon,
@@ -18,7 +18,7 @@ from deetoo.models.item import (
     Shield,
     Jewelry,
 )
-from deetoo.models.unique import UniqueItem
+from deetoo.models.v1.unique import UniqueItem
 
 
 DATA_FOLDER = Path(__file__).parent.resolve()
@@ -46,7 +46,7 @@ def parse_csv_to_class(filename, cls, post_process_func=None, db=None):
     return objects
 
 
-def read_base_items_data(db=None, post_process_func=None):
+def read_base_items_data():
     """
     Reads all item csv files and returns a dictionary containing their
     contents as deetoo.models.item dataclass dictionaries that

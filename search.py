@@ -1,8 +1,8 @@
 import json
 from argparse import ArgumentParser
-from deetoo.models.db import db_context
+from deetoo.models.v1.db import db_context
 from thefuzz.fuzz import partial_ratio
-from tinydb import Query, where
+from tinydb import Query
 
 
 def fuzzy(val: str, search: str, threshold: int = 90) -> int:
