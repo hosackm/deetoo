@@ -1,7 +1,7 @@
 import json
 import pytest
 
-from deetoo.models.item import (
+from deetoo.models.v1.item import (
     Weapon,
     TwoHandWeapon,
     ThrowWeapon,
