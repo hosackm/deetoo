@@ -2,8 +2,8 @@ from pathlib import Path
 from csv import reader
 
 
-from deetoo.models.v3 import engine
-from deetoo.models.v3.item import Item, UniqueItem, Set, SetItem
+from deetoo.models import engine
+from deetoo.models.item import Item, UniqueItem, Set, SetItem
 from sqlmodel import Session
 from sqlalchemy import text
 
