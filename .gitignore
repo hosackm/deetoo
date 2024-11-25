@@ -11,5 +11,5 @@ wheels/
 
 .python-version
 db.json
-example.db
-
+*.db
+*.db
