@@ -1,15 +1,9 @@
-import json
 from argparse import ArgumentParser
-from deetoo.models.v1.db import db_context
-from thefuzz.fuzz import partial_ratio
-from tinydb import Query
+import json
+from sqlmodel import Session, select
 
-
-def fuzzy(val: str, search: str, threshold: int = 90) -> int:
-    """
-    Perform a fuzzy test
-    """
-    return partial_ratio(str(val), search) > threshold
+from deetoo.models import get_engine
+from deetoo.models.item import Item, SetItem, UniqueItem
 
 
 if __name__ == "__main__":
@@ -29,23 +23,44 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    with db_context("db.json") as db:
-        base_items = db.table("base_items")
-        unique_items = db.table("unique_items")
+    with Session(get_engine()) as session:
+        like = f"%{args.query}%"
+        results = session.exec(select(Item).where(Item.name.ilike(like))).all()
+        base_results = [b.model_dump() for b in results]
 
-        if args.fuzzy:
-            query = Query()[args.key].test(fuzzy, args.query)
-        else:
-            if args.query.isdigit():
-                args.query = int(args.query)
-            query = Query()[args.key] == args.query
+        results = session.exec(
+            select(SetItem, Item)
+            .join(Item)
+            .where(
+                Item.name.ilike(like),
+            )
+        ).all()
+        s_results: list[SetItem] = [s.model_dump() for s, _ in results]
 
-        base_item_results = base_items.search(query)
-        unique_item_results = unique_items.search(query)
+        results = session.exec(
+            select(UniqueItem, Item)
+            .join(Item)
+            .where(
+                Item.name.ilike(like),
+            )
+        ).all()
+        u_results: list[UniqueItem] = [u.model_dump() for u, _ in results]
 
-        results = {
-            "base_items": base_item_results,
-            "unique_items": unique_item_results,
-            "count": len(base_item_results) + len(unique_item_results),
-        }
-        print(json.dumps(results, indent=2, sort_keys=True))
+        print(
+            json.dumps(
+                {
+                    "base_items": {
+                        "count": len(base_results),
+                        "results": base_results,
+                    },
+                    "unique_items": {
+                        "count": len(u_results),
+                        "results": u_results,
+                    },
+                    "set_items": {
+                        "count": len(s_results),
+                        "results": s_results,
+                    },
+                }
+            )
+        )
