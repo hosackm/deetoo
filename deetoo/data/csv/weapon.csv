@@ -21,7 +21,7 @@ blade,0,35,51,-10,dagger,4,15,2,normal,24,all
 poignard,19,25,0,-20,dagger,6,18,1,exceptional,16,all
 rondel,24,25,58,0,dagger,10,26,1,exceptional,20,all
 cinquedeas,25,25,88,-20,dagger,6,18,3,exceptional,24,all
-stilet,,25,73,97,-10,dagger,19,36,2,exceptional,24,all
+stiletto,,25,73,97,-10,dagger,19,36,2,exceptional,24,all
 bone knife,43,38,75,-20,dagger,23,49,1,elite,26,all
 mithril point,52,55,98,0,dagger,37,53,1,elite,55,all
 fanged knife,62,42,86,-20,dagger,15,57,3,elite,36,all
@@ -57,7 +57,7 @@ truncheon,39,88,43,-10,mace,35,43,2,elite,55,all
 tyrant club,42,133,0,0,mace,32,58,3,elite,65,all
 reinforced mace,47,145,46,0,mace,41,49,2,elite,60,all
 devil star,52,153,44,10,mace,43,53,3,elite,72,all
-sourge,57,125,77,-10,mace,3,80,5,elite,65,all
+scourge,57,125,77,-10,mace,3,80,5,elite,65,all
 legendary mallet,61,189,0,20,mace,50,61,4,elite,65,all
 scepter,0,25,0,0,scepter,6,11,2,normal,50,all
 grand scepter,0,37,0,10,scepter,8,18,3,normal,60,all
@@ -119,6 +119,7 @@ wrist spike,24,66,66,-10,claw,13,27,2,exceptional,56,assassin
 fascia,27,69,69,10,claw,8,37,2,exceptional,64,assassin
 hand scythe,30,73,73,-10,claw,16,37,2,exceptional,72,assassin
 greater claws,33,76,76,-20,claw,18,37,3,exceptional,52,assassin
+greater talons,37,79,79,-30,claw,21,35,3,exceptional,69,assassin
 scissors quhab,40,82,82,0,claw,19,40,3,exceptional,68,assassin
 suwayyah,44,99,99,0,claw,39,52,3,elite,48,assassin
 wrist sword,46,105,105,-10,claw,34,45,3,elite,56,assassin

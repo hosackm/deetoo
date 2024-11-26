@@ -2,7 +2,7 @@ from pathlib import Path
 from csv import reader
 
 
-from deetoo.models import engine
+from deetoo.models import get_engine
 from deetoo.models.item import Item, UniqueItem, Set, SetItem
 from sqlmodel import Session
 from sqlalchemy import text
@@ -86,6 +86,7 @@ def main():
     base_item_map = read_base_items()
     uniques = read_unique_items(base_item_map)
     set_items, set_map = read_set_items(base_item_map)
+    engine = get_engine()
 
     with Session(engine) as session:
         session.exec(text("DELETE FROM items"))

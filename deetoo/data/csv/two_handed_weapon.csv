@@ -14,7 +14,7 @@ silver-edged axe,48,166,65,0,axe,null,null,61,110,5,elite,35,all
 decapitator,54,189,33,10,axe,null,null,49,137,5,elite,40,all
 champion axe,61,167,59,-10,axe,null,null,59,94,6,elite,50,all
 glorious axe,66,164,55,10,axe,null,null,60,124,6,elite,50,all
-short box,0,0,15,5,bow,null,null,1,4,3,normal,null,all
+short bow,0,0,15,5,bow,null,null,1,4,3,normal,null,all
 hunter's bow,0,0,28,-10,bow,null,null,2,6,4,normal,null,all
 long bow,0,22,19,0,bow,null,null,3,10,5,normal,null,all
 composite bow,0,25,35,-10,bow,null,null,4,8,4,normal,null,all

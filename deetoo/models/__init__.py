@@ -3,8 +3,11 @@ from sqlmodel import create_engine, SQLModel
 
 dbpath = Path(__file__).resolve().parents[2] / "sqlmodel.db"
 sqlite_url = f"sqlite:///{dbpath}"
-engine = create_engine(sqlite_url, echo=True)
 
 
 def init_db():
-    SQLModel.metadata.create_all(engine)
+    SQLModel.metadata.create_all(get_engine(echo=True))
+
+
+def get_engine(echo=False):
+    return create_engine(sqlite_url, echo=echo)
