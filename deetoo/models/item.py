@@ -1,12 +1,22 @@
-from sqlmodel import SQLModel, Field, Relationship
+from sqlmodel import SQLModel, Field, Relationship, CheckConstraint
 from typing import Optional
 from sqlalchemy import Column, JSON
+from .schema import ItemType
+
+
+ItemTypeConstraint = CheckConstraint(
+    name="item_type_constraint",
+    sqltext=f"item_type IN ({','.join(f"'{i}'" for i in ItemType)})",
+)
 
 
 class Item(SQLModel, table=True):
     __tablename__ = "items"
+    __table_args__ = (ItemTypeConstraint,)
+
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str
+    item_type: str
     blob: dict = Field(sa_column=Column(JSON))
 
     set_items: list["SetItem"] = Relationship(back_populates="base_item")

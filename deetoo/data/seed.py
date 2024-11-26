@@ -2,7 +2,7 @@ from pathlib import Path
 from csv import reader
 
 
-from deetoo.models import get_engine
+from deetoo.models import get_engine, dbpath, init_db
 from deetoo.models.item import Item, UniqueItem, Set, SetItem
 from sqlmodel import Session
 from sqlalchemy import text
@@ -30,13 +30,14 @@ def read_base_items():
 
     items = {}
     for filename in filenames:
+        item_type = Path(filename).stem
         with open(DATA_DIR / filename) as f:
             rdr = reader(f)
             headers = next(rdr)
             for row in rdr:
                 name = row[0]
                 blob = dict(zip(headers[1:], row[1:]))
-                items[name] = Item(name=name, blob=blob)
+                items[name] = Item(name=name, blob=blob, item_type=item_type)
 
     return items
 
@@ -86,7 +87,10 @@ def main():
     base_item_map = read_base_items()
     uniques = read_unique_items(base_item_map)
     set_items, set_map = read_set_items(base_item_map)
-    engine = get_engine()
+    engine = get_engine(echo=True)
+
+    if not dbpath.exists():
+        init_db()
 
     with Session(engine) as session:
         session.exec(text("DELETE FROM items"))
