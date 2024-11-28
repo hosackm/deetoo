@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, field_serializer
-from deetoo.models.item import UniqueItem, Item
+from deetoo.models.item import UniqueItem, Item, SetItem
 
 
 class ItemRead(BaseModel):
@@ -53,10 +53,22 @@ if __name__ == "__main__":
     async def main():
         engine = create_async_engine(sqlite_url)
         session = AsyncSession(engine)
-        result = await session.exec(
-            select(UniqueItem).options(joinedload(UniqueItem.base_item))
-        )
-        print([UniqueItemRead.model_validate(r) for r in result.all()])
+        # result = await session.exec(
+        #     select(UniqueItem).options(joinedload(UniqueItem.base_item))
+        # )
+        # print([UniqueItemRead.model_validate(r) for r in result.all()])
+        # await session.close()
+
+        results = (
+            await session.exec(
+                select(SetItem).options(
+                    joinedload(SetItem.base_item),
+                    joinedload(SetItem.set),
+                )
+            )
+        ).all()
+
+        print([SetItemRead.model_validate(r, from_attributes=True) for r in results])
         await session.close()
 
     asyncio.run(main())
