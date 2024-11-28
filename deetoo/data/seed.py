@@ -2,8 +2,9 @@ from pathlib import Path
 from csv import reader
 
 
-from deetoo.models import get_engine, dbpath, init_db
+from deetoo.models import get_engine, dbpath, init_db, sqlite_url
 from deetoo.models.item import Item, UniqueItem, Set, SetItem
+from deetoo.models import SQLModel
 from sqlmodel import Session
 from sqlalchemy import text
 
@@ -36,8 +37,12 @@ def read_base_items():
             headers = next(rdr)
             for row in rdr:
                 name = row[0]
-                blob = dict(zip(headers[1:], row[1:]))
-                items[name] = Item(name=name, blob=blob, item_type=item_type)
+                attributes = dict(zip(headers[1:], row[1:]))
+                items[name] = Item(
+                    name=name,
+                    attributes=attributes,
+                    item_type=item_type,
+                )
 
     return items
 
@@ -83,7 +88,7 @@ def read_set_items(name_to_base_item):
     return set_items, sets
 
 
-def main():
+def build_database(url):
     base_item_map = read_base_items()
     uniques = read_unique_items(base_item_map)
     set_items, set_map = read_set_items(base_item_map)
@@ -93,19 +98,22 @@ def main():
         init_db()
 
     with Session(engine) as session:
-        session.exec(text("DELETE FROM items"))
-        session.exec(text("DELETE FROM unique_items"))
-        session.exec(text("DELETE FROM set_items"))
-        session.exec(text("DELETE FROM sets"))
-
-    all_adds = list(base_item_map.values())
-    all_adds += uniques
-    all_adds += list(set_map.values())
-    all_adds += set_items
-    with Session(engine) as session:
-        for a in all_adds:
-            session.add(a)
+        for t in SQLModel.metadata.tables:
+            session.exec(text(f"DELETE FROM {t}"))
         session.commit()
+
+    insertions = []
+    for iterable in (base_item_map.values(), uniques, set_map.values(), set_items):
+        insertions.extend(list(iterable))
+
+    with Session(engine) as session:
+        for el in insertions:
+            session.add(el)
+        session.commit()
+
+
+def main():
+    build_database(sqlite_url)
 
 
 if __name__ == "__main__":

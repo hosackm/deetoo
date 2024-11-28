@@ -17,7 +17,7 @@ class Item(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str
     item_type: str
-    blob: dict = Field(sa_column=Column(JSON))
+    attributes: dict = Field(sa_column=Column(JSON))
 
     set_items: list["SetItem"] = Relationship(back_populates="base_item")
     unique_items: list["UniqueItem"] = Relationship(back_populates="base_item")
