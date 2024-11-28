@@ -38,19 +38,25 @@ class SetItemRead(BaseModel):
         from_attributes = True
 
     @field_serializer("set")
-    def serialize_dt(self, set: SetRead, _info):
+    def serialize_set(self, set: SetRead, _info):
         return set.name
 
 
 if __name__ == "__main__":
-    from sqlmodel import Session, select
+    from sqlalchemy.ext.asyncio import create_async_engine
     from sqlalchemy.orm import joinedload
-    from deetoo.models import get_engine
+    from sqlmodel.ext.asyncio.session import AsyncSession
+    from deetoo.models import sqlite_url
+    from sqlmodel import select
+    import asyncio
 
-    with Session(get_engine()) as session:
-        result = session.exec(
+    async def main():
+        engine = create_async_engine(sqlite_url)
+        session = AsyncSession(engine)
+        result = await session.exec(
             select(UniqueItem).options(joinedload(UniqueItem.base_item))
-        ).first()
-        print(UniqueItemRead.serialize(result))
-        result = session.exec(select(Item)).first()
-        print(ItemRead.serialize(result))
+        )
+        print([UniqueItemRead.model_validate(r) for r in result.all()])
+        await session.close()
+
+    asyncio.run(main())
