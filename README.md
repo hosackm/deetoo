@@ -2,7 +2,7 @@
 
 Database of items in [Diablo 2](https://en.wikipedia.org/wiki/Diablo_II).
 
-## Install and run tests
+## Install and run
 
 ```bash
 uv sync
