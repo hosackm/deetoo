@@ -7,5 +7,7 @@ Database of items in [Diablo 2](https://en.wikipedia.org/wiki/Diablo_II).
 ```bash
 uv sync
 uv pip install -e .
-pytest -xv .
+python deetoo/data/seed.py
+fastapi dev deetoo/app.py
+curl -sL 'localhost:8000/base_items'
 ```

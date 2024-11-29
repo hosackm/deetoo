@@ -69,6 +69,3 @@ class Cache:
             for m in models:
                 self.store[f"{key}/{m.id}"] = m
             self.store[key] = models
-
-
-# cache = Cache()
