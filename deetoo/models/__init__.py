@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from sqlmodel.ext.asyncio.session import AsyncSession
 from typing import AsyncGenerator
 
-dbpath = Path(__file__).resolve().parents[2] / "sqlmodel.db"
+dbpath = Path(__file__).resolve().parents[2] / "deetoo.db"
 sqlite_url = f"sqlite+aiosqlite:///{dbpath}"
 
 
