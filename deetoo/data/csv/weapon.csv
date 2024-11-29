@@ -21,7 +21,7 @@ blade,0,35,51,-10,dagger,4,15,2,normal,24,all
 poignard,19,25,0,-20,dagger,6,18,1,exceptional,16,all
 rondel,24,25,58,0,dagger,10,26,1,exceptional,20,all
 cinquedeas,25,25,88,-20,dagger,6,18,3,exceptional,24,all
-stiletto,,25,73,97,-10,dagger,19,36,2,exceptional,24,all
+stiletto,25,73,97,-10,dagger,19,36,2,exceptional,24,all
 bone knife,43,38,75,-20,dagger,23,49,1,elite,26,all
 mithril point,52,55,98,0,dagger,37,53,1,elite,55,all
 fanged knife,62,42,86,-20,dagger,15,57,3,elite,36,all
