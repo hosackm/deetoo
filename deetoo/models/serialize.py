@@ -53,12 +53,6 @@ if __name__ == "__main__":
     async def main():
         engine = create_async_engine(sqlite_url)
         session = AsyncSession(engine)
-        # result = await session.exec(
-        #     select(UniqueItem).options(joinedload(UniqueItem.base_item))
-        # )
-        # print([UniqueItemRead.model_validate(r) for r in result.all()])
-        # await session.close()
-
         results = (
             await session.exec(
                 select(SetItem).options(

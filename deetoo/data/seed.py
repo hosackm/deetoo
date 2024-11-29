@@ -2,11 +2,12 @@ from pathlib import Path
 from csv import reader
 
 
-from deetoo.models import get_engine, dbpath, init_db, sqlite_url
+from deetoo.models import get_session, dbpath, init_db, sqlite_url
 from deetoo.models.item import Item, UniqueItem, Set, SetItem
 from deetoo.models import SQLModel
-from sqlmodel import Session
+from sqlmodel.ext.asyncio.session import AsyncSession
 from sqlalchemy import text
+from sqlalchemy.ext.asyncio import create_async_engine
 
 
 DATA_DIR = Path(__file__).resolve().parent / "csv"
@@ -88,33 +89,37 @@ def read_set_items(name_to_base_item):
     return set_items, sets
 
 
-def build_database(url):
+async def build_database(url):
     base_item_map = read_base_items()
     uniques = read_unique_items(base_item_map)
     set_items, set_map = read_set_items(base_item_map)
-    engine = get_engine(echo=True)
+
+    engine = create_async_engine(sqlite_url)
+    session = AsyncSession(engine)
 
     if not dbpath.exists():
-        init_db()
+        await init_db(engine)
 
-    with Session(engine) as session:
-        for t in SQLModel.metadata.tables:
-            session.exec(text(f"DELETE FROM {t}"))
-        session.commit()
+    for t in SQLModel.metadata.tables:
+        await session.exec(text(f"DELETE FROM {t}"))
+    await session.commit()
 
     insertions = []
     for iterable in (base_item_map.values(), uniques, set_map.values(), set_items):
         insertions.extend(list(iterable))
 
-    with Session(engine) as session:
-        for el in insertions:
-            session.add(el)
-        session.commit()
+    for el in insertions:
+        session.add(el)
+    await session.commit()
+
+    await session.close()
 
 
-def main():
-    build_database(sqlite_url)
+async def main():
+    await build_database(sqlite_url)
 
 
 if __name__ == "__main__":
-    main()
+    import asyncio
+
+    asyncio.run(main())

@@ -8,8 +8,9 @@ dbpath = Path(__file__).resolve().parents[2] / "sqlmodel.db"
 sqlite_url = f"sqlite+aiosqlite:///{dbpath}"
 
 
-def init_db(url=sqlite_url):
-    SQLModel.metadata.create_all(get_engine(url, echo=True))
+async def init_db(engine):
+    async with engine.begin() as conn:
+        await conn.run_sync(SQLModel.metadata.create_all)
 
 
 def get_engine(url=sqlite_url, echo=False):
