@@ -6,14 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "aiosqlite>=0.20.0",
-    "alembic>=1.14.0",
     "fastapi[all,standard]>=0.115.5",
     "greenlet>=3.1.1",
     "ruff>=0.7.4",
     "sqlalchemy>=2.0.36",
     "sqlmodel>=0.0.22",
-    "thefuzz>=0.22.1",
-    "tinydb>=4.8.2",
 ]
 
 [tool.uv]
